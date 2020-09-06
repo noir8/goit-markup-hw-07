@@ -1148,8 +1148,8 @@ p {
 
 .checkbox:checked + .checkbox-icon {
   border: none;
-  background-color: var(--accent-color);
-  background-image: url("../images/icons/icon-check.svg");
+  background-color: #2196f3;
+  background-image: url("../images/icons/");
   background-size: contain;
   background-origin: border-box;
 }
