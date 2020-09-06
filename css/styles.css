@@ -393,16 +393,7 @@ p {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
-.what-we-do-list {
-	display: flex;
-	flex-wrap: wrap;
-}
-.what-we-do-list .item {
-	width: 370px;
-}
-.what-we-do-list .item:not(:last-child) {
-	margin-right: 30px;
-}
+
 .what-we-do .section-title {
 	font-family: roboto, sans-serif;
 	margin-top: 0px;
@@ -419,6 +410,20 @@ p {
 .what-we-do .what-we-do-img {
 	margin-bottom: -3px;
 }
+.what-we-do-card {
+	position: relative;
+}
+.what-we-do-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.what-we-do-list .item {
+	width: 370px;
+}
+.what-we-do-list .item:not(:last-child) {
+	margin-right: 30px;
+}
+
 .list-title {
 	position: absolute;
 	width: 370px;
@@ -442,10 +447,10 @@ p {
 	text-transform: uppercase;
 	color: #ffffff;
 }
-.what-we-do-card {
-	position: relative;
+.teammate-photo {
+	margin-bottom: -3px;
 }
-.site-our-team {
+.our-team {
 	margin-left: auto;
 	margin-right: auto;
 
@@ -453,7 +458,7 @@ p {
 	padding-bottom: 94px;
 	background: #f5f4fa;
 }
-.site-our-team .our-team-title {
+.our-team .our-team-title {
 	font-family: roboto, sans-serif;
 	margin-bottom: 50px;
 
@@ -465,6 +470,33 @@ p {
 	letter-spacing: 0.03em;
 
 	color: #212121;
+}
+
+.our-team .teammate-name {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-family: roboto, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: #212121;
+}
+.our-team .teammate-role {
+	font-family: roboto, sans-serif;
+	margin-bottom: 16px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: #757575;
 }
 .our-team-list {
 	display: flex;
@@ -480,43 +512,16 @@ p {
 .our-team-list .item:not(:last-child) {
 	margin-right: 30px;
 }
-.teammate-photo {
-	margin-bottom: -3px;
-}
-.site-our-team .teammate-name {
-	margin-top: 30px;
-	margin-bottom: 10px;
-	font-family: roboto, sans-serif;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-
-	text-align: center;
-	letter-spacing: 0.03em;
-
-	color: #212121;
-}
-.site-our-team .teammate-role {
-	font-family: roboto, sans-serif;
-	margin-bottom: 16px;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 19px;
-
-	text-align: center;
-	letter-spacing: 0.03em;
-
-	color: #757575;
-}
 .social-network-list {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 30px;
 }
-.social-icon-item:not(:last-child) {
-	margin-right: 10px;
+
+.social-icon {
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .social-icon-button {
 	display: inline-flex;
 	justify-content: center;
@@ -528,9 +533,8 @@ p {
 	border-radius: 50%;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-icon {
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.social-icon-item:not(:last-child) {
+	margin-right: 10px;
 }
 
 .social-icon-button:hover {
@@ -546,7 +550,7 @@ p {
 .social-icon-button:focus .social-icon {
 	fill: #fff;
 }
-.site-our-clients {
+.our-clients {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
@@ -554,29 +558,29 @@ p {
 	display: flex;
 	justify-content: center;
 }
-.client-button {
+.our-clients-button {
 	box-sizing: border-box;
 	border: 1px solid;
 	border-radius: 4px;
 	border-color: #afb1b8;
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-item:not(:last-child) {
+.our-clients-item:not(:last-child) {
 	margin-right: 30px;
 }
-.client-item :focus {
+.our-clients-item :focus {
 	border-color: #2196f3;
 }
-.client-item :hover {
+.our-clients-item :hover {
 	border-color: #2196f3;
 }
-.client-button:hover {
+.our-clients-button:hover {
 	fill: #2196f3;
 }
-.client-button:focus {
+.our-clients-button:focus {
 	fill: #2196f3;
 }
-.client-button {
+.our-clients-button {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -585,7 +589,7 @@ p {
 	height: 90px;
 }
 
-.site-our-clients .our-clients-title {
+.our-clients .our-clients-title {
 	font-family: raleway, sans-serif;
 	margin-bottom: 50px;
 	font-style: normal;
@@ -846,10 +850,10 @@ textarea {
 	color: #212121;
 }
 
-.container-footer {
+.footer {
 	background: #2f303a;
 }
-.container-footer .container {
+.footer .container {
 	display: flex;
 
 	padding-bottom: 60px;
@@ -938,7 +942,7 @@ textarea {
 
 	fill: #757575;
 }
-.container-footer .logo-2 {
+.footer .logo-2 {
 	display: flex;
 	font-family: raleway, sans-serif;
 	font-weight: 700;
@@ -1006,7 +1010,7 @@ textarea {
 	justify-content: center;
 	margin-bottom: 30px;
 }
-.footer-social-icon-item:not(:last-child) {
+.footer-social-icon .item:not(:last-child) {
 	margin-right: 10px;
 }
 .footer-social-button {
